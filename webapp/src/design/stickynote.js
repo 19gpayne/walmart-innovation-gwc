@@ -100,7 +100,7 @@ export const StickyNoteLeft = ({color}) => (
         <Text>
             Recycled plastic = environmental!
             <br />
-            I luv trees
+            I luv trees 
         </Text>
     </NoteLeft>
 );
