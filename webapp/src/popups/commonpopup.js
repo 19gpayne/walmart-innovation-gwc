@@ -9,6 +9,7 @@ export const CommonBackground = styled.div`
     width: 100%;
     background-color: rgba(0, 0, 0, 0.30);
     z-index: 50;
+    overflow: hidden;
 `;
 
 export const CommonModal = styled.div`
