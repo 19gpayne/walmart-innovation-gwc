@@ -10,8 +10,8 @@ import {PhonePopup, CartPopup} from '../home/phonepopup';
 const SideBar = styled.div`
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    position: absolute;
-    right: 0px;
+    position: fixed;
+    right: 0%;
     top: 50%;
     border-radius: 4px;
     z-index: 30;
@@ -19,7 +19,8 @@ const SideBar = styled.div`
     min-height: 120px;
     background-color: white;
     transform: rotate(180deg);
-    padding: 10px;
+    padding: 20px 0px;
+    padding-left: 20px;
     text-align: center;
     border-top: 2px solid navy;
     border-bottom: 2px solid navy;
@@ -29,6 +30,7 @@ const SideBar = styled.div`
     font-size: 20px;
     overflow: hidden;
     color: navy;
+    vertical-align: right;s
 `;
 
 const CartImage = styled.img`
