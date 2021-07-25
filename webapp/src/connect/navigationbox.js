@@ -66,7 +66,7 @@ class NavigationBox extends React.Component {
                     <>
                         <Padding> 
                             <Flex>
-                                <img src='https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg' width='50%'/>
+                                <img src='https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg' width='50%' alt='Walmart'/>
                                 <br />
                                 Welcome to your new shopping list
                                 <br />
@@ -85,7 +85,7 @@ class NavigationBox extends React.Component {
                     <Padding>
                         <Icon><DoubleLeftOutlined onClick={() => {return this.setState({'page': 1})}}/></Icon>
                         <Flex>
-                            <img src='https://res.cloudinary.com/dou0q4ekk/image/upload/v1627230687/Screen_Shot_2021-07-25_at_12.31.14_PM_pvpd4t.png' width='70%' />
+                            <img src='https://res.cloudinary.com/dou0q4ekk/image/upload/v1627230687/Screen_Shot_2021-07-25_at_12.31.14_PM_pvpd4t.png' width='70%' alt='Aisle K9 (1)'/>
                             <br />
                             <br />
                             Readable and organized
@@ -103,7 +103,7 @@ class NavigationBox extends React.Component {
                     <Padding>
                         <Icon><DoubleLeftOutlined onClick={() => {return this.setState({'page': 2})}}/></Icon>
                         <Flex>
-                            <img src='https://res.cloudinary.com/dou0q4ekk/image/upload/v1627230768/Screen_Shot_2021-07-24_at_6.49.11_PM_i6qalg.png' width='20%' />
+                            <img src='https://res.cloudinary.com/dou0q4ekk/image/upload/v1627230768/Screen_Shot_2021-07-24_at_6.49.11_PM_i6qalg.png' width='20%' alt='Location'/>
                             <br />
                             Navigate with ease
                             <br />

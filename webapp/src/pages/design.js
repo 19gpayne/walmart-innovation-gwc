@@ -6,7 +6,6 @@ import {StickyNoteLeft, StickyNoteRight} from '../design/stickynote';
 // import {PageFull} from './pagesstyledcomponents';
 import {SketchPad} from '../design/sketch';
 import {GridPaper} from '../design/gridpaper';
-import {CommonBackground, CommonModal} from '../popups/commonpopup';
 import { RecyclingPopup } from '../design/recyclingpopup';
 import {MoreButton} from '../design/morebutton';
 import { CartPopup } from '../design/cartpopup';

@@ -5,7 +5,7 @@ import {CommonBackground, CommonModal} from '../popups/commonpopup';
 import NavTop from '../navbar/navtop';
 import {WelcomeSign} from '../home/welcomesign';
 import {PageFull} from './pagesstyledcomponents';
-import {RightOutlined, ShoppingCartOutlined} from '@ant-design/icons';
+import {RightOutlined} from '@ant-design/icons';
 
 export const Phone = styled.div`
     text-align: center;
@@ -83,7 +83,7 @@ class Home extends React.Component {
                                         <>
                                             <Title>This is a phone from 1937. Pretty outdated, right?</Title>
                                             <br />
-                                            <img src='https://cdn.pixabay.com/photo/2017/07/06/00/44/phone-2476595_960_720.png' height="auto" width="100%" style={{textAlign: "center"}}/>
+                                            <img src='https://cdn.pixabay.com/photo/2017/07/06/00/44/phone-2476595_960_720.png' height="auto" width="100%" style={{textAlign: "center"}} alt='Phone'/>
                                             <br />
                                             <Next onClick={() => {return this.showModal(2)}}><RightOutlined/>&nbsp;</Next>
                                         </>
@@ -92,7 +92,7 @@ class Home extends React.Component {
                                     <>
                                         <Title>This is also equipment from 1937. Probably time for an upgrade...</Title>
                                         <br />
-                                        <img src='https://cdn.pixabay.com/photo/2018/02/14/23/38/shopping-cart-3154149_960_720.jpg' height="auto" width="70%" style={{textAlign: "center", marginRight: 'auto', marginLeft: 'auto', display: 'block'}}/>
+                                        <img src='https://cdn.pixabay.com/photo/2018/02/14/23/38/shopping-cart-3154149_960_720.jpg' height="auto" width="70%" style={{textAlign: "center", marginRight: 'auto', marginLeft: 'auto', display: 'block'}} alt='Cart'/>
                                         <br />
                                         <Next onClick={() => {return this.showModal(3)}}><RightOutlined/>&nbsp;</Next>
                                     </>
@@ -103,7 +103,7 @@ class Home extends React.Component {
                     {this.state.page === 3 && 
                         <>
                             <WelcomeSign />
-                            <img src='https://res.cloudinary.com/dou0q4ekk/image/upload/v1627091230/Removal-653_rasnpi.png' width={'100%'} height={'60%'} style={{objectFit: 'cover', objectPosition: 'left center', position: 'absolute', left: '0%', top: '40%'}}/>
+                            <img src='https://res.cloudinary.com/dou0q4ekk/image/upload/v1627091230/Removal-653_rasnpi.png' width={'100%'} height={'60%'} style={{objectFit: 'cover', objectPosition: 'left center', position: 'absolute', left: '0%', top: '40%'}} alt='Cart'/>
                         </>
                     }
                 </PageFull>

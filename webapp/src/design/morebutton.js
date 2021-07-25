@@ -71,7 +71,7 @@ export const MoreButton = ({showPopup}) => (
             </Text>
         </Button>
         <Pen>
-            <img src='https://cdn.pixabay.com/photo/2012/04/13/18/44/pen-33237_960_720.png' width={'80%'}/>
+            <img src='https://cdn.pixabay.com/photo/2012/04/13/18/44/pen-33237_960_720.png' width={'80%'} alt='Pen'/>
         </Pen>
     </OverFlow>
 );

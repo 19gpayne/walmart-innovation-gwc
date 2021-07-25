@@ -1,11 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import {CommonBackground, CommonModal} from '../popups/commonpopup';
 
 import NavTop from '../navbar/navtop';
 import {WelcomeSign} from '../home/welcomesign';
 import {PageFull} from './pagesstyledcomponents';
-import {RightOutlined, ShoppingCartOutlined} from '@ant-design/icons';
 
 export const Phone = styled.div`
     text-align: center;
