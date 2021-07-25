@@ -29,3 +29,30 @@ export const CommonModal = styled.div`
     }
     z-index: 51;
 `;
+
+export const Title = styled.div`
+    font-size: 30px;
+    font-family: Roboto Condensed;
+    padding: 10px;
+`;
+
+export const Body = styled.div`
+    font-size: 20px;
+    font-family: Roboto Condensed;
+    padding: 10px;
+`;
+
+export const Icon = styled.div`
+    text-align: right;
+    width: 100%;
+    height: auto;
+    font-size: 90px;
+`;
+
+export const Close = styled.div`
+    text-align: right;
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    cursor: pointer;
+`;

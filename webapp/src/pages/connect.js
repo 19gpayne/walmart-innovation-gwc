@@ -37,7 +37,7 @@ const Sign = styled.div`
     }
 `;
 
-export const Text = styled.div`
+const Text = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,7 @@ export const Text = styled.div`
     color: white;
 `;
 
-export const Header = styled.div`
+const Header = styled.div`
     display: flex;
     white-space: pre-line;
     font-size: 30px;

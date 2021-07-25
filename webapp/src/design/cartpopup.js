@@ -1,34 +1,6 @@
 import { CloseOutlined, ShoppingCartOutlined } from '@ant-design/icons';
 import React from 'react';
-import {CommonBackground, CommonModal} from '../popups/commonpopup';
-import styled from "styled-components";
-
-const Title = styled.div`
-    font-size: 30px;
-    font-family: Roboto Condensed;
-    padding: 10px;
-`;
-
-const Body = styled.div`
-    font-size: 20px;
-    font-family: Roboto Condensed;
-    padding: 10px;
-`;
-
-export const Icon = styled.div`
-    text-align: right;
-    width: 100%;
-    height: auto;
-    font-size: 90px;
-`;
-
-export const Close = styled.div`
-    text-align: right;
-    width: 100%;
-    height: auto;
-    font-size: 20px;
-    cursor: pointer;
-`;
+import {CommonBackground, CommonModal, Title, Body, Close, Icon} from '../popups/commonpopup';
 
 export const CartPopup = ({close}) => (
     <>

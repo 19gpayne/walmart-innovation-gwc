@@ -2,7 +2,7 @@ import { SearchOutlined } from '@ant-design/icons';
 import React from 'react';
 import styled from "styled-components";
 
-export const Button = styled.div`
+const Button = styled.div`
     text-align: center;
     font-size: 25px;
     background-color: #fced86;
@@ -34,7 +34,7 @@ export const Button = styled.div`
     
 `;
 
-export const Pen = styled.div`
+const Pen = styled.div`
     width: 30%;
     margin-top: 100px;
     margin-left: 80%;
@@ -45,11 +45,11 @@ export const Pen = styled.div`
     }
 `;
 
-export const Text = styled.div`
+const Text = styled.div`
     cursor: pointer;
 `;
 
-export const OverFlow = styled.div`
+const OverFlow = styled.div`
     overflow: hidden;
     @media screen and (max-width: 800px) {
         left: revert;

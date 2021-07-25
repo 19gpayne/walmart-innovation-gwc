@@ -7,34 +7,6 @@ import {WelcomeSign} from '../home/welcomesign';
 import {PageFull} from './pagesstyledcomponents';
 import {PhonePopup, CartPopup} from '../home/phonepopup';
 
-export const Icon = styled.div`
-    text-align: center;
-    width: 100%;
-    height: auto;
-    font-size: 90px;
-    transform: rotate(180deg);
-`;
-
-export const Cart = styled.div`
-    text-align: center;
-    width: 100%;
-    height: auto;
-    font-size: 90px;
-`;
-
-export const Next = styled.div`
-    text-align: right;
-    height: auto;
-    font-size: 30px;
-    cursor: pointer;
-    background-color: #041e42;
-    border-radius: 4px;
-    padding: 7px 0px;
-    outline: none;
-    width: 100%;
-    color: #ffffff;
-`;
-
 const SideBar = styled.div`
     writing-mode: vertical-rl;
     text-orientation: mixed;

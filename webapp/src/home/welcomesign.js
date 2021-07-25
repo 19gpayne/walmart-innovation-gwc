@@ -10,7 +10,7 @@ const expand = keyframes`
   }
 `;
 
-export const Sign = styled.div`
+const Sign = styled.div`
     background: #0071DC;
     z-index: 4;
     width: 100%;
@@ -30,7 +30,7 @@ export const Sign = styled.div`
     }
 `;
 
-export const Text = styled.div`
+const Text = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +41,7 @@ export const Text = styled.div`
     color: white;
 `;
 
-export const Header = styled.div`
+const Header = styled.div`
     display: flex;
     white-space: pre-line;
     font-size: 30px;

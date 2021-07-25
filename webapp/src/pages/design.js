@@ -3,14 +3,13 @@ import styled from 'styled-components';
 
 import NavTop from '../navbar/navtop';
 import {StickyNoteLeft, StickyNoteRight} from '../design/stickynote';
-// import {PageFull} from './pagesstyledcomponents';
 import {SketchPad} from '../design/sketch';
 import {GridPaper} from '../design/gridpaper';
 import { RecyclingPopup } from '../design/recyclingpopup';
 import {MoreButton} from '../design/morebutton';
 import { CartPopup } from '../design/cartpopup';
 
-export const PageFull = styled.div`
+const PageFull = styled.div`
     width: 100%;
     background-color: ${props => props.color};
     top: 0;
@@ -22,7 +21,8 @@ export const PageFull = styled.div`
         background-size: 150%;
         bottom: revert;
     }
-    // background-color:#06c;
+
+    // background made by Matteo De Santi https://codepen.io/matteodesanti/pen/PmQKmV
     background-image: linear-gradient(rgba(255,255,255,0.2) 2px, transparent 2px),
     linear-gradient(90deg, rgba(255,255,255,0.2) 2px, transparent 1px),
     linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
@@ -31,7 +31,7 @@ export const PageFull = styled.div`
     background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
 `;
 
-export const Papers = styled.div`
+const Papers = styled.div`
     @media screen and (max-width: 800px) {
         display: flex;
         justify-content: space-around;

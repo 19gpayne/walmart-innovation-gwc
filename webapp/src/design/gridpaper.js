@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 
-export const Paper = styled.div`
+const Paper = styled.div`
     background-color: white;
     background-size: contain;
     background-image:
@@ -28,7 +28,7 @@ export const Paper = styled.div`
     }
 `;
 
-export const Text = styled.div`
+const Text = styled.div`
     text-align: left;
     white-space: pre-line;
     font-family: Covered By Your Grace;
@@ -46,7 +46,7 @@ export const Text = styled.div`
     color: black;
 `;
 
-export const Underline = styled.div`
+const Underline = styled.div`
     text-decoration: underline;
     cursor: pointer;
     font-family: Covered By Your Grace;

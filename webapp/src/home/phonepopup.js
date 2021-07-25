@@ -2,33 +2,14 @@ import {CloseOutlined } from '@ant-design/icons';
 import React from 'react';
 import styled from "styled-components";
 import {RightOutlined} from '@ant-design/icons';
+import {Close, Title, Body} from '../popups/commonpopup';
 
-const Title = styled.div`
-    font-size: 30px;
-    font-family: Roboto Condensed;
-    padding: 10px;
-`;
-
-const Body = styled.div`
-    font-size: 20px;
-    font-family: Roboto Condensed;
-    padding: 10px;
-`;
-
-export const Icon = styled.div`
+const Icon = styled.div`
     text-align: right;
     width: 100%;
     height: auto;
     font-size: 90px;
-    margin-left: 70%;
-`;
-
-export const Close = styled.div`
-    text-align: right;
-    width: 100%;
-    height: auto;
-    font-size: 20px;
-    cursor: pointer;
+    margin-left: 60%;
 `;
 
 export const Next = styled.div`
