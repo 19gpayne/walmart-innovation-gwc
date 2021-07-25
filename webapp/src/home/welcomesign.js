@@ -10,7 +10,7 @@ const expand = keyframes`
   }
 `;
 
-export const NoteLeft = styled.div`
+export const Sign = styled.div`
     padding: 10px;
     background: repeating-linear-gradient(goldenrod, goldenrod 20%, #3b3b3b 20.1%, #3b3b3b 100%);
     box-shadow: 5px 5px 7px rgba(33,33,33,.7);
@@ -19,12 +19,19 @@ export const NoteLeft = styled.div`
     height: 200px;
     text-align: center;
     margin: 0px 200px;
-    border: 1px solid black;
     animation-name: ${expand};
     animation-duration: 1s;
     animation-iteration-count: 1;
     transform-origin: 0% 0%;
     margin-top: 100px;
+    font-family: Roboto Condensed;
+    font-size: 40px;
+    @media only screen and (max-width: 800px) {
+      width: calc(100% - 50px);
+      margin: auto;
+      margin-top: 100px;
+      font-size: 30px;
+    }
 `;
 
 export const Text = styled.div`
@@ -34,12 +41,19 @@ export const Text = styled.div`
     height: 100%;
     text-align: center;
     white-space: pre-line;
-    font-size: 20px;
     padding: 5px;
+    color: white;
+`;
+
+export const Header = styled.div`
+    display: flex;
+    white-space: pre-line;
+    font-size: 30px;
 `;
 
 export const WelcomeSign = () => (
-    <NoteLeft>
-        <Text>Introducing Walmart's newest design... the Walcart!</Text>
-    </NoteLeft>
+    <Sign>
+        <Header>Aisle A3</Header>
+        <Text>Introducing Walmart's newest design... the Walcart Connect!</Text>
+    </Sign>
 );

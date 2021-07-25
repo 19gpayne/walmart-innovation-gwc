@@ -6,23 +6,17 @@ export const NavTop = styled.div`
     position: absolute;
     left: 0;
     background-color: #041e42;
-    padding: 20px 10px;
+    padding: 20px 0px;
     z-index: 2;
-    display: inline;
     text-align: center;
+    font-family: Roboto Condensed;
 `;
 
 export const DesktopIcon = styled.div`
     color: white;
-    ${props => props.status !== 'active'} {
-        font-weight: bold;
-    }
-    ${props => props.status !== 'inactive'} {
-        font-weight: normal;
-    }
     cursor: pointer;
     & :hover {
-        font-weight: bold;
+        text-decoration: underline;
     }
     font-size: 50px;
     text-align: center;
@@ -37,6 +31,7 @@ export const Label = styled.div`
     color: white;
     ${props => props.status !== 'active'} {
         font-weight: bold;
+        text-decoration: underline;
     }
     ${props => props.status !== 'inactive'} {
         font-weight: normal;

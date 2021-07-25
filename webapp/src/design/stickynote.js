@@ -10,29 +10,13 @@ export const NoteLeft = styled.div`
     width: 200px;
     height: 200px;
     position: absolute;
-    left: 100px;
+    left: 50px;
     top: 100px;
-    @media screen and (max-width: 1024px) {
-        right: 100px;
+    @media only screen and (max-width: 800px) {
+        position: revert;
         left: revert;
-    }
-    @media only screen and (max-width: 640px) {
-        display: revert;
-        right: 25px;
-        left: revert;
-        top: revert;
-        bottom: 75px;
-        width: 150px;
-        height: 150px;
-    }
-    @media only screen and (max-width: 640px) and (min-height: 640px) {
-        display: revert;
-        right: 50px;
-        left: revert;
-        top: revert;
-        bottom: 100px;
-        width: 200px;
-        height: 200px;
+        right: revert;
+        display: inline-flex;
     }
 `;
 
@@ -46,34 +30,12 @@ export const NoteRight = styled.div`
     height: 200px;
     position: absolute;
     right: 50px;
-    top: 425px;
-    @media screen and (max-width: 1024px) {
-        left: 50px;
+    top: 475px;
+    @media only screen and (max-width: 800px) {
+        position: revert;
+        left: revert;
         right: revert;
-        top: 425px;
-    }
-    @media screen and (max-width: 640px) {
-        display: none;
-    }
-`;
-
-export const NoteRight2 = styled.div`
-    padding: 10px;
-    background-color: ${props => props.color};
-    box-shadow: -5px 5px 7px rgba(33,33,33,.7);
-    z-index: 4;
-    transform: rotate(-3deg);
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    right: 75px;
-    top: 50px;
-    @media only screen and (max-width: 640px) {
-        top: 25px;
-        right: 5px;
-        width: 150px;
-        height: 150px;
-        font-size: 15px;
+        display: inline-flex;
     }
 `;
 
@@ -87,20 +49,18 @@ export const Text = styled.div`
     font-family: Covered By Your Grace;
     font-size: 20px;
     padding: 5px;
-    @media only screen and (max-width: 640px) {
-        font-size: 24px;
-    }
-    @media only screen and (max-width: 640px) and (min-height: 640px) {
-        font-size: 30px;
+    @media only screen and (max-width: 800px) {
+        font-size: 15px;
     }
 `;
 
 export const StickyNoteLeft = ({color}) => (
     <NoteLeft color={color}>
         <Text>
-            Recycled plastic = environmental!
-            <br />
-            I luv trees 
+            Embedded screen allows for easy shopping navigation,
+            with ability to connect shopping list from walmart.com
+            <br/>
+            + games for kids :)
         </Text>
     </NoteLeft>
 );
@@ -108,7 +68,8 @@ export const StickyNoteLeft = ({color}) => (
 export const StickyNoteRight = ({color}) => (
     <NoteRight color={color}>
         <Text>
-            
+            Pushless shopping cart design with self-driving and navigation
+            based on shopping list
         </Text>
     </NoteRight>
 );
