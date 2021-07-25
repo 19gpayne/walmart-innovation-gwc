@@ -22,7 +22,7 @@ export const CommonModal = styled.div`
     left: 0px;
     right: 0px;
     @media screen and (max-width: 800px) {
-        top: 10px;
+        top: 50px;
         width: 80%;
         padding: 20px;
         overflow: auto;

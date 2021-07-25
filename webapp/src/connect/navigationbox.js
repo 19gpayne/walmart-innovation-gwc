@@ -17,13 +17,16 @@ const Box = styled.div`
     bottom: 40px;
     border-radius: 4px;
     background-color: white;
+    width: 60%;
     @media screen and (max-width: 1024px) {
         position: relative;
         top: revert;
         bottom: revert;
         display: block;
-        margin: 0px 10px;
+        margin: 0;
         right: revert;
+        width: 99%;
+        padding: 0;
     }
 `;
 
@@ -37,10 +40,10 @@ const Padding = styled.div`
 `;
 
 const Font = styled.div`
-    font-size: 25px;
+    font-size: 20px;
     padding: 20px;
     @media screen and (max-width: 800px) {
-        font-size: 20px;
+        font-size: 15px;
     }
 `;
 

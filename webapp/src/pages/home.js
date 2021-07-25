@@ -1,19 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import {CommonBackground, CommonModal} from '../popups/commonpopup';
 
 import NavTop from '../navbar/navtop';
 import {WelcomeSign} from '../home/welcomesign';
 import {PageFull} from './pagesstyledcomponents';
-
-export const Phone = styled.div`
-    text-align: center;
-    width: 100%;
-    height: auto;
-    font-size: 100px;
-    transform: rotate(225deg);
-    margin-bottom: -60px;
-    margin-left: 2px;
-`;
+import {PhonePopup, CartPopup} from '../home/phonepopup';
 
 export const Icon = styled.div`
     text-align: center;
@@ -30,15 +22,8 @@ export const Cart = styled.div`
     font-size: 90px;
 `;
 
-export const Text = styled.div`
-    text-align: center;
-    width: 100%;
-    height: auto;
-    font-size: 30px;
-`;
-
 export const Next = styled.div`
-    text-align: center;
+    text-align: right;
     height: auto;
     font-size: 30px;
     cursor: pointer;
@@ -50,22 +35,89 @@ export const Next = styled.div`
     color: #ffffff;
 `;
 
+const SideBar = styled.div`
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    border-radius: 4px;
+    z-index: 30;
+    height: fit-content;
+    min-height: 120px;
+    background-color: white;
+    transform: rotate(180deg);
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid navy;
+    border-bottom: 2px solid navy;
+    border-right: 2px solid navy;
+    font-family: Roboto Condensed;
+    cursor: pointer;
+    font-size: 20px;
+    overflow: hidden;
+    color: navy;
+`;
+
+const CartImage = styled.img`
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 100%;
+`;
+
+const Border = styled.div`
+    border-radius: 5px;
+    border: 1px solid gray;
+    height: 70%;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+`;
+
+
+
 class Home extends React.Component {
-    state={};
+    state={page: 1};
 
     componentDidMount() {
         
     }
 
+    showModal = (n) => {
+        this.setState({"page": n})
+    }
+
     render() {
         return (
             <>
-                <PageFull color={'#0071DC'} style={{backgroundImage: 'url("https://res.cloudinary.com/dou0q4ekk/image/upload/v1626970325/IMG_5179_alhgoy.jpg")', backgroundSize: '100%', backgroundRepeat: 'no-repeat'}}>
-                {/* <PageFull color={'#0071DC'} > */}
+                <PageFull color='#b5dbff'>
                     <NavTop />
                     <WelcomeSign />
-                    {/* <img src='https://res.cloudinary.com/dou0q4ekk/image/upload/v1627091230/Removal-653_rasnpi.png' width={'100%'} height={'65%'} style={{objectFit: 'cover', objectPosition: 'left center', position: 'absolute', left: '0%', top: '45%'}}/> */}
+                    <Border>
+                        <CartImage src='https://res.cloudinary.com/dou0q4ekk/image/upload/v1627245514/IMG_5177_1_zfngzd.jpg' width='50%'/>
+                    </Border>
+                    <SideBar onClick={() => {return this.showModal(2)}}>
+                        More Info
+                    </SideBar>
                 </PageFull>
+                {this.state.page !== 1 && 
+                    <>
+                        <CommonBackground/>
+                        <CommonModal>
+                            {this.state.page === 2 && 
+                                    <>
+                                        <PhonePopup close={() => {return this.showModal(1)}} next={() => {return this.showModal(3)}}/>
+                                    </>
+                                }
+                            {this.state.page === 3 && 
+                                <>
+                                    <CartPopup close={() => {return this.showModal(1)}} next={() => {return this.showModal(1)}}/>
+                                </>
+                            }
+                        </CommonModal>
+                    </>
+                }
             </>
         )
     }

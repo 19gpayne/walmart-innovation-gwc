@@ -3,13 +3,14 @@ import styled from "styled-components";
 
 export const Phone = styled.img`
     background-color: white;
-    margin-top: -90px;
-    height: calc(100% - 60px);
-    width: auto;
+    margin-top: 100px;
+    height: auto;
+    width: 30%;
     position: absolute;
+    top: -4%;
     left: 0;
-    top: 20%;
     z-index: 0;
+    height: 92%;
     @media screen and (max-width: 1024px) {
         margin-top: revert;
         width: 100%;

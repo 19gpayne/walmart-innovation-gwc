@@ -14,7 +14,9 @@ const Sign = styled.div`
     display: block;
     margin-top: 100px;
     margin-left: 500px;
-    margin-right: 50px;
+    right: 50px;
+    position: absolute;
+    width: 60%;
     background: repeating-linear-gradient(goldenrod, goldenrod 20%, #3b3b3b 20.1%, #3b3b3b 100%);
     box-shadow: 5px 5px 7px rgba(33,33,33,.7);
     height: 200px;
@@ -26,6 +28,9 @@ const Sign = styled.div`
         display: block;
         margin: 0;
         margin-top: 100px;
+        right: revert;
+        width: calc(100% - 20px);
+        overflow: hidden;
     }
     @media screen and (max-width: 800px) {
         font-size: 30px;
